@@ -1,0 +1,8 @@
+[defaults]
+url=https://sentry.xn--80ajbekothchmme5j.xn--p1ai/
+
+org=sentry
+project=domoteka-front
+
+[auth]
+token=85d6d2c6ea2740e9860c7c0952a57769a3cdd463d37749ea82a964ef9eb93188

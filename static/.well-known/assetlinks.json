@@ -1,0 +1,10 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "online.domoteka.app.pro",
+      "sha256_cert_fingerprints": ["56:95:25:9F:C9:C8:39:C3:31:B6:C3:E4:C3:E9:A8:92:23:19:22:35:6E:B9:FD:F8:7E:F3:B7:63:D9:75:C4:6E"]
+    }
+  }
+]

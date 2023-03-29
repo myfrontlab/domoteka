@@ -1,0 +1,90 @@
+.input-group {
+  display: flex;
+  width: 100%;
+
+  > *:first-child {
+    @include bp-min($mq-tablet-min) {
+      border-radius: 16px;
+      //border-right: none;
+    }
+
+    @include bp-max($mq-mobile-max) {
+      border-radius: 16px;
+    }
+  }
+
+  > *:last-child {
+    @include bp-min($mq-tablet-min) {
+      border-radius: 16px;
+      //border-left: none;
+    }
+
+    @include bp-max($mq-mobile-max) {
+      border-radius: 16px;
+    }
+  }
+
+  > * + * {
+    margin-top: 16px;
+  }
+}
+
+.input {
+  background: #FFFFFF;
+  border: 1px solid #ADB9C8;
+  border-radius: 15px;
+  flex-grow: 1;
+  width: 100%;
+
+  padding: 16px;
+
+  font-weight: 300;
+
+  @include bp-min($mq-tablet-min) {
+    height: 64px;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @include bp-max($mq-mobile-max) {
+    height: 56px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &::placeholder {
+    color: #4C5A6B;
+  }
+
+  &-search {
+    padding-left: 56px;
+    background: white url(~@/assets/img/icon/magnify.svg) no-repeat left 16px center/24px 24px;
+  }
+}
+
+.button {
+  height: 64px;
+  border: none;
+
+  &-submit {
+    font-size: 16px;
+    line-height: 32px;
+    color: #FFFFFF;
+    background-color: #0047FF;
+    min-width: 179px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  @include bp-min($mq-tablet-min) {
+    height: 64px;
+  }
+
+  @include bp-max($mq-mobile-max) {
+    height: 56px;
+
+    &-submit {
+      flex-grow: 1;
+    }
+  }
+}

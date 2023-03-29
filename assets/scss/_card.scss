@@ -1,0 +1,12 @@
+.card {
+  background: white;
+
+  @include bp-min($mq-tablet-min) {
+    padding: 40px;
+    border-radius: 24px;
+  }
+
+  @include bp-max($mq-mobile-max) {
+    padding: 24px;
+  }
+}

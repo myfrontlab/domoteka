@@ -1,0 +1,87 @@
+@import '~bootstrap-scss/functions';
+
+$blue: #008FFF !default;
+$light: #F2F5F7;
+$body-color-9:					rgba(32,53,56,.9) !default;
+$color-text-primary:            #113a59 !default;
+
+$danger_brand: #e00000;
+$success_brand: #3E9728;
+
+$blue_brand: #286D97;
+$blue-2_brand: #0669B8;
+$lightblue_brand: #008FFF; // #31A1F9
+$lightblue-2_brand: #BADAEA; // DCE1E6
+$lightblue-3_brand: #C1D1DF;
+
+$gray_icon: #93A8B2;
+
+// $body-bg: #EDF3F6;  // #E9F2F7
+$violet_color: #113A59;
+$violet-2_color: #214D70;
+$violet-light_color: rgba(17, 58, 89, 0.6);
+$violet-light-2_color: rgba(17, 58, 89, 0.4);
+
+
+/* $input-border-color: $lightblue-2_brand;
+$input-border-radius: 4px;
+$input-height:  36px;
+$input-font-size: 14px; */
+
+$modal-header-border-width: 2px;
+$modal-header-border-color: $lightblue-3_brand;
+$modal-content-border-width: 0;
+$modal-content-border-color: transparent;
+
+// Body
+$body-color: #596D7B;
+
+// Typography
+$font-family-base: 'Rubik', 'Arial', 'Helvetica', sans-serif;
+$headings-color: #214866;
+$h1-font-size: 28px;
+$h2-font-size: 23px;
+$h3-font-size: 18px;
+
+// Forms
+$input-padding-y: .75rem;
+$input-padding-x: 1rem;
+$input-font-size: 14px;
+$input-border-color: $lightblue-3_brand;
+$input-border-width: 2px;
+$input-placeholder-color: #87939C;
+$input-height: 47px;
+
+// Cards
+$card-border-width: 2px;
+$card-border-color: $lightblue-3_brand;
+$card-spacer-x: 24px;
+$card-spacer-y: 24px;
+$card-border-radius: 8px;
+
+// Links
+//
+// Style anchor elements.
+$link-color: #31A1F9;
+
+// Media
+//$mq-desktop-full-hd: 1920px;
+//$mq-desktop-medium: 1600px;
+//$mq-desktop-hd: 1366px;
+$mq-desktop-min: 1200px;
+
+//$mq-tablet-max: $mq-desktop-min - 1;
+$mq-tablet-medium: 1024px;
+$mq-tablet-small: 992px;
+//$mq-tablet-small-max: $mq-tablet-small - 1;
+$mq-tablet-min: 768px;
+
+$mq-mobile-max: $mq-tablet-min - 1;
+$mq-mobile-medium: 576px;
+$mq-mobile-small-max: $mq-mobile-medium - 1;
+$mq-mobile-small: 480px;
+//$mq-mobile-min: 320px;
+
+$spacer: 15px;
+
+@import "~bootstrap-scss/variables";

@@ -1,0 +1,157 @@
+.vs__dropdown-toggle {
+  overflow: hidden;
+  height: 52px;
+  border: none !important;
+  box-shadow: 0 4px 29px rgba(0, 0, 0, 0.1);
+  border-radius: 12px !important;
+  position: relative;
+  &:before{
+    content: url("@/assets/img/icon/v-select-vectors.svg");
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .vs__actions {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    //width: 50px;
+  }
+
+  .vs__selected-options {
+    height: 100%;
+  }
+
+  .vs__open-indicator {
+  }
+
+  .vs__clear {
+    display: none;
+    position: absolute;
+  }
+
+  input {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: transparent;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #292929;
+    opacity: 0.35;
+    outline: none;
+  }
+}
+
+.vs__dropdown-menu {
+  //background: white;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
+  color: #808080;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  padding: 5px 0;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  z-index: 2;
+  max-height: 380px;
+
+  @media (min-width: 1280px) {
+    top: 62px;
+    width: 400px;
+    font-size: 18px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 27px;
+    padding: 10px 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    cursor: pointer;
+
+    @media(max-width: 1280px) {
+      font-size: 14px;
+    }
+
+    &:hover {
+      background-color: #92B84D;
+    }
+  }
+}
+
+.vs--open {
+  .vs__selected {
+    display: flex;
+  }
+}
+
+.vs__selected {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  height: 100%;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  white-space: nowrap;
+
+  @media (min-width: 1280px) {
+    font-size: 18px;
+  }
+}
+
+.v-select {
+  position: relative;
+
+  input[type="search"]::-webkit-search-decoration,
+  input[type="search"]::-webkit-search-cancel-button,
+  input[type="search"]::-webkit-search-results-button,
+  input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance:none;
+  }
+}
+
+.vs__dropdown-option--highlight {
+  background-color: #F6F6F6;
+}
+.vs__dropdown-option--selected{
+  background-color: #F6F6F6;
+}
+
+.vs--searching {
+  .vs__selected {
+    display: none;
+  }
+
+}
+
+.vs__search::placeholder {
+  color: black;
+}
+
+.wide-mode {
+  &--500 {
+    .vs__dropdown-menu {
+      @media (min-width: 1280px) {
+        width: 500px;
+      }
+    }
+  }
+}

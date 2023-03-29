@@ -1,0 +1,64 @@
+.list {
+  & + & {
+    margin-top: 16px;
+  }
+
+  @include bp-min($mq-tablet-min) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  @include bp-max($mq-mobile-max) {
+    width: 100%;
+    padding: 0px 16px 0px;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: 24px;
+     color: #4C5A6B;
+   }
+
+  &__item {
+     margin-top: 8px;
+     display: flex;
+     justify-content: space-between;
+   }
+
+  &__item-value &__item-key {
+     font-weight: 300;
+
+     color: #4C5A6B;
+
+    @include bp-min($mq-tablet-min) {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    @include bp-max($mq-mobile-max) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+   }
+
+  &__item-key {
+    width: 80%;
+  }
+
+  &__item-value {
+    text-align: right;
+  }
+
+  &__skeleton-title {
+     height: 16px;
+     width: 50%;
+   }
+
+  &__skeleton-item {
+     margin-top: 8px;
+     height: 20px;
+     width: 100%;
+   }
+}

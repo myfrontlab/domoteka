@@ -1,0 +1,128 @@
+.page {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  background: $color-background;
+
+  &__header {
+    flex-shrink: 0;
+  }
+
+  &__content {
+    flex: 1 0 auto;
+    padding-top: 24px;
+    @media (min-width: 992px) {
+      & {
+        padding-top: 86px;
+        margin-bottom: 73px;
+      }
+    }
+  }
+
+  &__hr {
+    height: 2px;
+    margin-top: 40px;
+    width: 100%;
+    background: $color-hr
+  }
+
+  &__footer {
+    flex-shrink: 0;
+  }
+
+  &_inner-fix {
+    padding-bottom: 58px;
+    @media (min-width: 768px) {
+      & {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+.vs__actions {
+  opacity: 0 !important;
+}
+
+.container {
+  max-width: 1312px;
+}
+
+.mobile-content {
+  @include bp-min($mq-tablet-min) {
+    display: none;
+  }
+}
+
+.desktop-content {
+  @include bp-max($mq-tablet-min) {
+    display: none;
+  }
+}
+
+// .hint-wrap {
+//   flex-direction: column;
+//   margin-top: 10px;
+//   display: none;
+
+//   @media (min-width: 768px) {
+//     display: flex;
+//     flex-direction: row;
+//   }
+
+//   .hint {
+//     font-size: 14px;
+//     line-height: 18px;
+//     color: rgba(17, 58, 89, 0.6);
+//     max-width: 305px;
+//     padding-left: 60px;
+//     height: 40px;
+//     display: flex;
+//     align-items: center;
+//     background-repeat: no-repeat;
+//     background-position: left top 50%;
+
+//     &:last-child {
+//       margin-top: 16px;
+//       background-size: 50px 40px;
+//       @media (min-width: 768px) {
+//         margin-top: 0;
+//         margin-left: 30px;
+//       }
+//     }
+
+//     &.mod-pci {
+//       background-image: url(~assets/img/payer-info/pci.svg);
+//     }
+
+//     &.mod-card {
+//       background-image: url(~assets/img/payer-info/card.svg);
+//     }
+//   }
+
+//   &.mod-compressed {
+//     display: grid;
+//     grid-template-rows: repeat(2, 44px);
+//     grid-gap: 10px;
+
+//     .hint {
+//       height: auto;
+//       background-position: left top;
+//       padding-left: 50px;
+//       min-height: 40px;
+
+//       &:last-child {
+//         margin-left: 0;
+//       }
+
+//       &.mod-pci {
+//         background-size: 40px 32px;
+//       }
+
+//       &.mod-card {
+//         background-position: left 4px top;
+//         background-size: 30px 30px;
+//       }
+//     }
+//   }
+// }

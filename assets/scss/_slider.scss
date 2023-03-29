@@ -1,0 +1,38 @@
+.agile__dots {
+  // margin-top: 10px;
+  margin: 0px;
+}
+
+.agile__actions {
+  align-items: center;
+}
+
+.agile__dot {
+  button {
+    width: 10px;
+    height: 10px;
+    padding: 0px;
+    border-radius: 15px;
+    background: white;
+    border-width: 0px;
+    margin: 5px;
+  }
+}
+
+.agile__dot--current {
+  button {
+    background: black;
+  }
+}
+
+.agile__nav-button {
+  background: transparent;
+  border-radius: 15px;
+  border-width: 0px;
+  padding-bottom: 3px;
+}
+
+.agile__actions {
+  margin-top: 24px;
+  padding: 0px 24px;
+}

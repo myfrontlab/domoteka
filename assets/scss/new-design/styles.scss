@@ -1,0 +1,61 @@
+.card-title{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 43px;
+  color: #292929;
+  @include bp-max($mq-tablet-min){
+    font-size: 20px;
+  }
+}
+
+.block-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  color: #292929;
+  @include bp-max($mq-tablet-min){
+    font-size: 25px;
+  }
+}
+
+.card-description{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #676767;
+  @include bp-max($mq-tablet-min){
+    font-size: 14px;
+  }
+}
+
+
+
+.card-header{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #292929;
+  @include bp-max($mq-tablet-min){
+    font-size: 18px;
+  }
+}
+
+.ul-line-height{
+  line-height: 39px;
+  list-style: none;
+}
+
+.green-text{
+  color: #92B84D;
+}
+
+.white-text{
+  color: #FFFFFF;
+}
+
+input:focus{
+  border-color:red !important;
+}
