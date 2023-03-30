@@ -13,7 +13,7 @@ import axios from 'axios'
  */
 export default async function ({ fias, stringAddress, shortAddress, street, streetFiasId, housenum, cityFiasId }) {
   const headers = { Authorization: 'Bearer ' + '640|TaLXonJQPNQHvv3jjjfvBTVJLsHYbRFgcAXMGhMc' }
-  const connect = await axios.post('https://domoteka.online/api/web/houses/', {
+  const connect = await axios.post('https://domoteka.online/api/web/house/', {
     fias_guid: fias,
     string_address: stringAddress,
     short_address: shortAddress,
@@ -23,7 +23,7 @@ export default async function ({ fias, stringAddress, shortAddress, street, stre
     city_fias_id: cityFiasId
   }, { headers })
   const houseId = connect.data.id
-  const data = await axios.get(`https://domoteka.online/api/web/houses/${houseId}`, {
+  const data = await axios.get(`https://domoteka.online/api/web/house/${houseId}`, {
     headers
   })
   // @ts-ignore

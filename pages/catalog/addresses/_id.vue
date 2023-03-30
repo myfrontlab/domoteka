@@ -1,39 +1,32 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class="col-12 px-0 px-md-3">
-        <!--<info-stores-app-block
-          :is-search-by-catalog="false"
-        />-->
-        <div class="content justify-content-between">
-          <div class="row flex-shrink-0">
-            <div class="col-7 flex-shrink-0">
-              <div class="wrap-address-catalog card">
-                <breadcrumbs :array-address="pathAddresses" />
-                <br>
-                <address-catalog
-                  v-if="addressesFound"
-                  :addresses="addresses"
-                  :type="typeAddress"
-                  :title="title"
-                  :loading="!$fetchState"
-                />
-                <div v-else class="not-found-address">
-                  Ничего не найдено!
-                </div>
-              </div>
+    <div class="content">
+      <div class="row flex-shrink-0 flex-grow-0 justify-content-between">
+        <div class="col-7 flex-shrink-0">
+          <div class="wrap-address-catalog card">
+            <breadcrumbs :array-address="pathAddresses" />
+            <br>
+            <address-catalog
+              v-if="addressesFound"
+              :addresses="addresses"
+              :type="typeAddress"
+              :title="title"
+              :loading="!$fetchState"
+            />
+            <div v-else class="not-found-address">
+              Ничего не найдено!
             </div>
-            <!-- /.col-8 -->
-            <div class="col-5 flex-shrink-0">
-              <div class="wrap-info-domoteka-block">
-                <info-domoteka-block />
-              </div>
-            </div>
-            <!-- /.col-4 -->
           </div>
-          <!-- /.row -->
         </div>
+        <!-- /.col-8 -->
+        <div class="col-5 flex-shrink-0 flex-grow-0">
+          <div class="wrap-info-domoteka-block">
+            <info-domoteka-block />
+          </div>
+        </div>
+        <!-- /.col-4 -->
       </div>
+      <!-- /.row -->
     </div>
   </div>
 </template>
